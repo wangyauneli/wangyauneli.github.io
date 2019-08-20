@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>服务端高并发分布式架构演进之路&lt;br/&gt; &lt;br/&gt; &lt;br/&gt; &lt;br/&gt; | first</title>
+  <title>服务端高并发分布式架构演进之路 | first</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="1. 概述本文以淘宝作为例子，介绍从一百个并发到千万级并发情况下服务端的架构的演进过程，同时列举出每个演进阶段会遇到的相关技术，让大家对架构的演进有一个整体的认知，文章最后汇总了一些架构设计的原则。 2. 基本概念在介绍架构之前，为了避免部分读者对架构设计中的一些概念不了解，下面对几个最基础的概念进行介绍：  分布式系统中的多个模块在不同服务器上部署，即可称为分布式系统，如Tomcat和数据库分别">
 <meta property="og:type" content="article">
-<meta property="og:title" content="服务端高并发分布式架构演进之路&lt;br&#x2F;&gt; &lt;br&#x2F;&gt; &lt;br&#x2F;&gt; &lt;br&#x2F;&gt;">
+<meta property="og:title" content="服务端高并发分布式架构演进之路">
 <meta property="og:url" content="http://yoursite.com/2019/08/20/服务端高并发分布式架构演进之路/index.html">
 <meta property="og:site_name" content="first">
 <meta property="og:description" content="1. 概述本文以淘宝作为例子，介绍从一百个并发到千万级并发情况下服务端的架构的演进过程，同时列举出每个演进阶段会遇到的相关技术，让大家对架构的演进有一个整体的认知，文章最后汇总了一些架构设计的原则。 2. 基本概念在介绍架构之前，为了避免部分读者对架构设计中的一些概念不了解，下面对几个最基础的概念进行介绍：  分布式系统中的多个模块在不同服务器上部署，即可称为分布式系统，如Tomcat和数据库分别">
@@ -30,9 +30,9 @@
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/195411/1560818877408-3270f9a7-bc71-4ac4-a04f-73372b7d1163.png#align=left&display=inline&height=593&originHeight=593&originWidth=693&size=0&status=done&width=693">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/195411/1560818877662-6f483187-db93-42d5-b17c-fd420177e9a8.png#align=left&display=inline&height=614&originHeight=614&originWidth=645&size=0&status=done&width=645">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/195411/1560818877690-40a0c7c3-6549-4391-9174-5ab7484e98a0.png#align=left&display=inline&height=477&originHeight=477&originWidth=800&size=0&status=done&width=800">
-<meta property="og:updated_time" content="2019-08-20T13:03:31.687Z">
+<meta property="og:updated_time" content="2019-08-20T13:04:15.467Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="服务端高并发分布式架构演进之路&lt;br&#x2F;&gt; &lt;br&#x2F;&gt; &lt;br&#x2F;&gt; &lt;br&#x2F;&gt;">
+<meta name="twitter:title" content="服务端高并发分布式架构演进之路">
 <meta name="twitter:description" content="1. 概述本文以淘宝作为例子，介绍从一百个并发到千万级并发情况下服务端的架构的演进过程，同时列举出每个演进阶段会遇到的相关技术，让大家对架构的演进有一个整体的认知，文章最后汇总了一些架构设计的原则。 2. 基本概念在介绍架构之前，为了避免部分读者对架构设计中的一些概念不了解，下面对几个最基础的概念进行介绍：  分布式系统中的多个模块在不同服务器上部署，即可称为分布式系统，如Tomcat和数据库分别">
 <meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2019/png/195411/1560818876242-24bde3c8-f6ca-4140-a816-fb9f1e58c9d5.png#align=left&display=inline&height=210&originHeight=210&originWidth=579&size=0&status=done&width=579">
   
@@ -177,13 +177,13 @@
         
   
     <h1 class="article-title" itemprop="name">
-      服务端高并发分布式架构演进之路&lt;br/&gt; &lt;br/&gt; &lt;br/&gt; &lt;br/&gt;
+      服务端高并发分布式架构演进之路
     </h1>
   
 
         
         <a href="/2019/08/20/服务端高并发分布式架构演进之路/" class="archive-article-date">
-  	<time datetime="2019-08-20T13:03:31.687Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-20</time>
+  	<time datetime="2019-08-20T13:04:15.466Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-20</time>
 </a>
         
       </header>
